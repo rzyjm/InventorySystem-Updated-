@@ -122,8 +122,8 @@ class Program
 
     public static void DepositItems()
     {
-        Console.WriteLine("Deposit Items");
-        Console.WriteLine("Enter the category (Snacks, Bath Essentials, Canned Goods, or Beverages): ");
+        Console.WriteLine("~~~Deposit Items~~~");
+        Console.WriteLine("Enter the category [Snacks, Bath Essentials, Canned Goods, or Beverages]: ");
         string category = Console.ReadLine();
 
         Console.WriteLine("Enter the item name: ");
@@ -133,19 +133,19 @@ class Program
         {
             case "Snacks":
                 snacks.Add(itemName);
-                Console.WriteLine($"Deposited {itemName} in Snacks successfully.");
+                Console.WriteLine($"Deposited the item {itemName} in Snacks successfully.");
                 break;
             case "Bath Essentials":
                 bathEssentials.Add(itemName);
-                Console.WriteLine($"Deposited {itemName} in Bath Essentials successfully.");
+                Console.WriteLine($"Deposited the item {itemName} in Bath Essentials successfully.");
                 break;
             case "Canned Goods":
                 cannedGoods.Add(itemName);
-                Console.WriteLine($"Deposited {itemName} in Canned Goods successfully.");
+                Console.WriteLine($"Deposited the item {itemName} in Canned Goods successfully.");
                 break;
             case "Beverages":
                 beverages.Add(itemName);
-                Console.WriteLine($"Deposited {itemName} in Beverages successfully.");
+                Console.WriteLine($"Deposited the item {itemName} in Beverages successfully.");
                 break;
             default:
                 Console.WriteLine("Invalid category. Please choose a valid category.");
